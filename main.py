@@ -13,8 +13,8 @@ claude_model = "claude-3-5-sonnet-20240620"
 claude_max_tokens = 8192
 sleep_param = 10
 temp = 1.0
-iterations = 6
-topic = "I'd like you two to get to know each other and discuss the future of AI."
+iterations = 10
+topic = "I'd like you two to trade 'snaps' like 'yo momma' jokes."
 
 # Define voice IDs for ElevenLabs TTS
 claude_voice_id = "iP95p4xoKVk53GoZ742B"  # Replace with the actual voice ID
