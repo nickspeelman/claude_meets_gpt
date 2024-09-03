@@ -45,12 +45,3 @@ class AnthropicChat:
     def clear_history(self):
         self.conversation_history = []
 
-# Example usage (can be commented out when using as a module)
-if __name__ == "__main__":
-    chat = AnthropicChat()
-    while True:
-        user_input = input("You: ")
-        if user_input.lower() == 'exit':
-            break
-        response = chat.send_message(user_input)
-        print("Claude:", response)

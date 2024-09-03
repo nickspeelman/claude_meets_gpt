@@ -16,7 +16,7 @@ def send_gpt_message(prompt, messages, model="gpt-4", temperature=0.5):
     # Add the new user message to the message history
     messages.append({"role": "user", "content": prompt})
 
-    # Create a streaming completion using the new API format
+    # Create a streaming completion
     stream = client.chat.completions.create(
         model=model,
         messages=messages,
@@ -26,7 +26,7 @@ def send_gpt_message(prompt, messages, model="gpt-4", temperature=0.5):
     # Collect the full response content
     response_content = ""
     for chunk in stream:
-        if chunk.choices[0].delta.content:  # Check if there's content in the delta
+        if chunk.choices[0].delta.content:
             response_content += chunk.choices[0].delta.content
 
     # Add the assistant's response to the message history

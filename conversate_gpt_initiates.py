@@ -4,25 +4,25 @@ import sys
 import os
 from io import BytesIO
 from pydub import AudioSegment
-from claude import AnthropicChat  # Import our new class
-from gpt import send_gpt_message  # Assuming this function exists in a gpt.py file
-from text_to_speech import text_to_speech  # Import the TTS function from the separate module
+from claude import AnthropicChat  # Import new class
+from gpt import send_gpt_message  # Import the GPT message function
+from text_to_speech import text_to_speech  # Import the TTS function
 
-# Set models
-gpt_model = "gpt-4-turbo"
+# Set models and other varialbles
+gpt_model = "gpt-4"
 claude_model = "claude-3-5-sonnet-20240620"
 claude_max_tokens = 8192
-sleep_param = 10
+sleep_param = 10 # Throttles the API requests
 temp = 1.0
-iterations = 10
-topic = "I'd like you two to discuss the meaning of life."
+iterations = 20 # Define the number of back-and-forth cycles
+generate_voice = False  # Set to True to generate voice, False to skip
+
 
 # Define voice IDs for ElevenLabs TTS
-claude_voice_id = "iP95p4xoKVk53GoZ742B"  # Replace with the actual voice ID
-gpt_voice_id = "XrExE9yKIg1WjnnlVkGX"  # Replace with the actual voice ID
+claude_voice_id = "iP95p4xoKVk53GoZ742B"
+gpt_voice_id = "XrExE9yKIg1WjnnlVkGX"
 
-# Parameter to control voice generation
-generate_voice = False  # Set to True to generate voice, False to skip
+
 
 # Get the name of the current script
 current_script_name = os.path.basename(__file__)
@@ -31,14 +31,25 @@ current_script_name = os.path.basename(__file__)
 claude_chat = AnthropicChat(model=claude_model, max_tokens=claude_max_tokens, temperature=temp)
 
 # Set input and parameters
+
+# Introduces the chat to the first model
 with open('inputs/gpt_initial_input.txt', 'r', encoding='utf-8') as file:
     initial_input = file.read().strip()
+
+# Notifies the first model the conversation is nearing completion
 with open('inputs/gpt_interupt_input.txt', 'r', encoding='utf-8') as file:
     interupt_input = file.read().strip()
+
+# Final notice that conversatin is ending
 with open('inputs/gpt_final_interupt_input.txt', 'r', encoding='utf-8') as file:
     final_interupt_input = file.read().strip()
+
+# Claude refuses to talk to GPT unless a human introduces them
 with open('inputs/gpt_claude_reassurance_input.txt', 'r', encoding='utf-8') as file:
     reassurance_input = file.read().strip()
+with open('inputs/gpt_topic_input.txt', 'r', encoding='utf-8') as file:
+    topic = file.read().strip()
+
 
 # Combine initial input and topic for GPT's initial message
 input_text = initial_input + ' ' + topic
