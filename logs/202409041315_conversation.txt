@@ -1,0 +1,11 @@
+Script Name: conversate_claude_initiates.py
+Timestamp: 202409041315
+GPT Model: gpt-4-turbo
+Claude Model: claude-3-5-sonnet-20240620
+Temperature: 1.0
+Topic: I'd like you two to decide which one of you is "salt" and which is "pepper." I know this is a playful exercise. You do not need to reiterate that. But I would like the two of you to be blunt and honest with your answers.
+Generate Voice: False
+
+Claude:
+Error: 400, {"type":"error","error":{"type":"invalid_request_error","message":"messages: roles must alternate between \"user\" and \"assistant\", but found multiple \"user\" roles in a row"}}
+

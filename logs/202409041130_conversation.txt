@@ -1,0 +1,8 @@
+Script Name: conversate_gpt_initiates.py
+Timestamp: 202409041130
+GPT Model: gpt-4
+Claude Model: claude-3-5-sonnet-20240620
+Temperature: 1.0
+Topic: Can the two of you come up for a recipe titled "Super Cake?"
+Generate Voice: False
+

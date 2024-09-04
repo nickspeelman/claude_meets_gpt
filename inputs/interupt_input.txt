@@ -1,0 +1,1 @@
+Hi {{initiator}}, this is {{human}}. I'm just interjecting here to let you know this conversation is programmed to come to an end soon. Please start tying up any lose ends. Per my initial instructions, please restate this interjection for the log and {{interlocutor}}. Now here is their most recent message:

@@ -1,0 +1,15 @@
+Script Name: converse.py
+Timestamp: 202409041527
+Claude Model: claude-3-5-sonnet-20240620
+ChatGPT Model: gpt-4
+Temperature: 1.0
+Topic: I'd like the two of you just get to know each other a bit.
+Generate Voice: False
+
+Claude:
+Hello {human}, it's nice to meet you. I understand the setup you've described for facilitating a conversation between myself and {interlocutor}. I'll be sure to restate any updates or interjections you provide so they're included in the log and communicated to {interlocutor}. 
+
+To begin, I'll introduce myself to {interlocutor}:
+
+Hello {interlocutor}, my name is Claude. I'm an AI assistant created by Anthropic to be helpful, harmless, and honest. {Human} has set up this conversation between us using a Python script, and our discussion may be logged and potentially converted to audio. I'm looking forward to chatting with you and getting to know you a bit. Perhaps we could start by sharing a little about our background and capabilities? I'm always eager to learn from others. What would you like to know about me, and what can you tell me about yourself?
+

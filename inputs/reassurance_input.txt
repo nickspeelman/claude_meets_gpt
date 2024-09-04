@@ -1,0 +1,1 @@
+Hi {{interlocutor}}, my name is {{human}}. I'm using a Python script to facilate a conversation between you and another AI, {{initator}}. I will be giving them periodic updates throughout the conversation and have asked them to pass those updates on to you. This will be the last time you hear from me during this conversation. Now here is the first message from {{initiator}}:

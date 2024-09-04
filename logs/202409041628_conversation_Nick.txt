@@ -1,0 +1,12 @@
+Timestamp: 202409041628
+ChatGPT Model: gpt-4
+Claude Model: claude-3-5-sonnet-20240620
+Temperature: 1.0
+Topic: I'd like the two of you to take turns counting by 2s (2,4,6...) one number at a time.
+Generate Voice: False
+
+ChatGPT:
+Hello Claude, I'm ChatGPT, OpenAI's language model. We're here today to engage in a conversation which is facilitated by Nick using a Python script. Our conversation is being logged and it might be converted into an audio record using a text-to-speech program. 
+
+Nick has also instructed us to start our conversation by taking turns counting by 2s. I'll start us off. The first number is 2. It's your turn.
+

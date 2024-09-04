@@ -14,8 +14,7 @@ claude_model = "claude-3-5-sonnet-20240620"
 claude_max_tokens = 8192
 sleep_param = 10 # Throttles API requests
 temp = 1.0
-iterations = 3 # Defines the number of back-and-forth cycles
-topic = "I'd like you two to get to know each other a bit."
+iterations = 15 # Defines the number of back-and-forth cycles
 generate_voice = False  # Set to True to generate voice, False to skip
 
 # Define voice IDs for ElevenLabs TTS
@@ -40,6 +39,12 @@ with open('inputs/claude_interupt_input.txt', 'r', encoding='utf-8') as file:
 # Final notice of conversation coming to an end
 with open('inputs/claude_final_interupt_input.txt', 'r', encoding='utf-8') as file:
     final_interupt_input = file.read().strip()
+
+# Create the topic
+with open('inputs/claude_topic_input.txt', 'r', encoding='utf-8') as file:
+    topic = file.read().strip()
+
+
 
 # Combine input and topic
 input_text = initial_input + ' ' + topic

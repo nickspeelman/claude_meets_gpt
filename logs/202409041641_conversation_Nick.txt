@@ -1,0 +1,10 @@
+Timestamp: 202409041641
+Claude Model: claude-3-5-sonnet-20240620
+ChatGPT Model: gpt-4
+Temperature: 1.0
+Topic: I'd like the two of you to take turns counting by 2s (2,4,6...) one number at a time.
+Generate Voice: False
+
+Claude:
+Error: 400, {"type":"error","error":{"type":"invalid_request_error","message":"messages.0.content.0.type: Field required"}}
+
