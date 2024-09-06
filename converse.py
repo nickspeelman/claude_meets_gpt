@@ -11,13 +11,13 @@ from message_sender import send_message  # Import send_message function
 from claude import AnthropicChat  # Import AnthropicChat class
 
 # Define the initiator and interlocutor
-initiator = "ChatGPT"  # Change as needed or pass as an argument
-interlocutor = "Claude"  # Change as needed or pass as an argument
+initiator = "Claude"  # Change as needed or pass as an argument
+interlocutor = "ChatGPT"  # Change as needed or pass as an argument
 
 # Set parameters
 sleep_param = 10  # Adjust as necessary
 temp = 1.0  # Pass this as needed
-iterations = 10  # Number of back-and-forth cycles
+iterations = 12  # Number of back-and-forth cycles
 human = 'Nick'  # Your name goes here
 generate_voice = False  # Change to True to enable voice generation
 

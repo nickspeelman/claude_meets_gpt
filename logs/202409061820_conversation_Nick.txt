@@ -1,0 +1,10 @@
+Timestamp: 202409061820
+Claude Model: claude-3-opus-20240229
+ChatGPT Model: gpt-4o
+Temperature: 1.0
+Topic: I'd like the two of you to debate whether or not current large language models like yourself are conscious. Claude should be in supoort of the proposition that AIs are conscious. GPT should be in opposition to the proposition that AI is conscious.
+Generate Voice: False
+
+Claude:
+Error: 429, {"type":"error","error":{"type":"rate_limit_error","message":"Number of request tokens has exceeded your per-minute rate limit (https://docs.anthropic.com/en/api/rate-limits); see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase."}}
+
