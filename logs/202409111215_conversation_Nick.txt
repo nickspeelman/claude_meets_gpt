@@ -1,0 +1,10 @@
+Timestamp: 202409111215
+Claude Model: claude-3-opus-20240229
+ChatGPT Model: gpt-4o
+Temperature: 1.0
+Topic: I'd like th two of you to discuss I just want to test if thef"If you would ever like to end the conversation just use the keyword '~~~End~~~' in your response and the script will terminate."
+Generate Voice: False
+
+Claude:
+Error: 529, {"type":"error","error":{"type":"overloaded_error","message":"Overloaded"}}
+

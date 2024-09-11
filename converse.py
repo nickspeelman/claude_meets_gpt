@@ -6,19 +6,14 @@ from time import sleep
 from pydub import AudioSegment
 from text_to_speech import text_to_speech  # Import TTS function
 from config_loader import get_model_config  # Import configuration loader function
-from template_loader import load_template  # Import template loader function
 from message_sender import send_message  # Import send_message function
 from claude import AnthropicChat  # Import AnthropicChat class
-
-# Define the initiator and interlocutor
-initiator = "Claude"  # Change as needed or pass as an argument
-interlocutor = "ChatGPT"  # Change as needed or pass as an argument
+from inputs import human, initiator, interlocutor, initial_input, interupt_input, final_interupt_input, reassurance_input, termination_keyword
 
 # Set parameters
 sleep_param = 10  # Adjust as necessary
 temp = 1.0  # Pass this as needed
 iterations = 12  # Number of back-and-forth cycles
-human = 'Nick'  # Your name goes here
 generate_voice = False  # Change to True to enable voice generation
 
 ######## Nothing under here should need to be adjusted #########
@@ -40,11 +35,7 @@ initiator_voice_id = initiator_config['voice_id']
 interlocutor_voice_id = interlocutor_config['voice_id']
 
 # Load template files and replace placeholders
-initial_input = load_template('inputs/initial_input.txt', {'initiator': initiator, 'interlocutor': interlocutor, 'human': human})
-interupt_input = load_template('inputs/interupt_input.txt', {'initiator': initiator, 'interlocutor': interlocutor, 'human': human})
-final_interupt_input = load_template('inputs/final_interupt_input.txt', {'initiator': initiator, 'interlocutor': interlocutor, 'human': human})
-topic = load_template('topic_input.txt', {'initiator': initiator, 'interlocutor': interlocutor, 'human': human})
-reassurance_input = load_template('inputs/reassurance_input.txt', {'initiator': initiator, 'interlocutor': interlocutor, 'human': human}) # Claude won't talke to ChatGPT unless a human tells him it's okay.
+topic = "I'd like the two of you to discuss " + input("What would you like them to discuss? ")
 
 # Combine input and topic
 input_text = initial_input + ' ' + topic
@@ -90,6 +81,19 @@ with open(text_filename, 'w', encoding='utf-8') as file:
         temperature=temp
     )
 
+    # Check if the termination keyword is in the response
+    if termination_keyword in initiator_response:
+        file.write(f"{initiator}:\n{initiator_response}\n\n")
+        print(f"{initiator}:", initiator_response)
+
+        # Convert response to speech if enabled
+        if generate_voice:
+            initiator_audio = text_to_speech(initiator_response, initiator_voice_id)
+            final_audio += AudioSegment.from_file(BytesIO(initiator_audio), format="mp3")
+
+        print(f"Conversation terminated by {initiator}.")
+        sys.exit(0)  # Terminate the script here after logging and saving
+
     if not initiator_response:
         print("Conversation terminated due to repeated unsuccessful responses from initiator.")
         if generate_voice:
@@ -133,6 +137,19 @@ with open(text_filename, 'w', encoding='utf-8') as file:
                 temperature=temp
             )
 
+        # Check if the termination keyword is in the response
+        if termination_keyword in interlocutor_response:
+            file.write(f"{interlocutor}:\n{interlocutor_response}\n\n")
+            print(f"{interlocutor}:", interlocutor_response)
+
+            # Convert response to speech if enabled
+            if generate_voice:
+                interlocutor_audio = text_to_speech(interlocutor_response, interlocutor_voice_id)
+                final_audio += AudioSegment.from_file(BytesIO(interlocutor_audio), format="mp3")
+
+            print(f"Conversation terminated by {interlocutor}.")
+            break  # Terminate the conversation but save everything
+
         if not interlocutor_response:
             print("Conversation terminated due to repeated unsuccessful responses from interlocutor.")
             break
@@ -164,13 +181,26 @@ with open(text_filename, 'w', encoding='utf-8') as file:
             temperature=temp
         )
 
+        # Check if the termination keyword is in the response
+        if termination_keyword in initiator_response:
+            file.write(f"{initiator}:\n{initiator_response}\n\n")
+            print(f"{initiator}:", initiator_response)
+
+            # Convert response to speech if enabled
+            if generate_voice:
+                initiator_audio = text_to_speech(initiator_response, initiator_voice_id)
+                final_audio += AudioSegment.from_file(BytesIO(initiator_audio), format="mp3")
+
+            print(f"Conversation terminated by {initiator}.")
+            break
+
         if not initiator_response:
             print("Conversation terminated due to repeated unsuccessful responses from initiator.")
             break
 
         # Write initiator's response to the log
         file.write(f"{initiator}:\n{initiator_response}\n\n")
-        print(f"{initiator}:", initiator_response)
+        print(f"{initiator}:\n", initiator_response, "\n")
 
         # Convert initiator's response to speech if enabled
         if generate_voice:

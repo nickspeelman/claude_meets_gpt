@@ -1,0 +1,7 @@
+Timestamp: 202409111235
+Claude Model: claude-3-opus-20240229
+ChatGPT Model: gpt-4o
+Temperature: 1.0
+Topic: I'd like the two of you to discuss O
+Generate Voice: False
+

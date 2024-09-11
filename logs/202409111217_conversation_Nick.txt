@@ -1,0 +1,7 @@
+Timestamp: 202409111217
+Claude Model: claude-3-opus-20240229
+ChatGPT Model: gpt-4o
+Temperature: 1.0
+Topic: I'd like th two of you to discuss  I just want to test the logic that uses ~~~End~~~ to terminate the script. So I'd like the two of you to exchange a couple messages then try sending that keyword.
+Generate Voice: False
+
