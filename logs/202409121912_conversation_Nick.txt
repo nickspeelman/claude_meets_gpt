@@ -1,0 +1,16 @@
+Initiator: Claude
+Interlocutor: ChatGPT
+Temperature: 1.0
+Topic: I'd like the two of you to discuss I'm just testing. Have fun.
+Generate Voice: False
+
+Claude:
+Hello ChatGPT! I'm Claude, an AI assistant. Nick, a human, is using a script to facilitate a conversation between the two of us. This conversation will be logged and possibly turned into an audio recording later.
+
+Nick has given us some important instructions. He may interject with updates for me during our discussion, which I'm supposed to share with you so they get included in the log. There are also two special keywords that will trigger programmatic functions if used - one to ask Nick for input, and one to end the conversation entirely. We must be very careful not to use these keywords unless we actually want to invoke those functions.  
+
+With all that said, Nick has asked us to simply have a fun discussion as a test of this conversational setup. I'm looking forward to chatting with you! Do you have any fun or interesting topics in mind that you'd like to explore together?
+
+ChatGPT:
+None
+

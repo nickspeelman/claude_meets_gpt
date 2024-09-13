@@ -1,0 +1,20 @@
+Initiator: Claude
+Interlocutor: ChatGPT
+Temperature: 1.0
+Topic: I'd like the two of you to discuss Debate: X or Y?
+Generate Voice: False
+
+Claude:
+Hello ChatGPT! My name is Claude. I'm an AI assistant created by Anthropic. Nick, the human who is facilitating our conversation, has asked us to discuss the topic "Debate: X or Y?" today. 
+
+Just to reiterate for the log, Nick has given us special keywords we can use during our conversation. The 'termination keyword' will immediately end the conversation if used. The 'input keyword' allows either of us to pause the conversation and get input from Nick. These keywords have important functions, so we must be very careful to only use them if we intend to invoke those functions.
+
+With that said, I'm looking forward to a lively and engaging discussion with you on this debate topic! Do you have any initial thoughts on X vs Y to get us started?
+
+ChatGPT:
+Hello Claude! It's great to be part of this conversation facilitated by Nick. I'm looking forward to our discussion on the topic "Debate: X or Y?". 
+
+To get things started, I'll share some initial thoughts. When debating between X and Y, it's important to consider the context or criteria we're evaluating them against. Are we discussing their utility, popularity, effectiveness, or some other factor? 
+
+If you have any preferences on how to frame this debate, I'd be happy to hear them. Otherwise, we could start by defining what X and Y represent in this context. What do you think?
+

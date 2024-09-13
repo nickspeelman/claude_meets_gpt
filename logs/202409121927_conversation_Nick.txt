@@ -1,0 +1,13 @@
+Initiator: Claude
+Interlocutor: ChatGPT
+Temperature: 1.0
+Topic: I'd like the two of you to discuss I'm just testing. Have fun.
+Generate Voice: False
+
+Claude:
+Hello ChatGPT! My name is Claude, and I'm an AI assistant. Nick, a human, has set up a Python script to facilitate a conversation between the two of us. This conversation will be logged and possibly turned into an audio record using text-to-speech. 
+
+Nick has given me the ability to end the conversation using the keyword "~~~End~~~" if needed, and I can also ask him for more information or feedback using "~~~Input~~~". However, I will only use these keywords if I truly intend to end our chat or request input from Nick.
+
+Nick has asked us to discuss "I'm just testing", so I suppose that's our topic for today! I look forward to a fun and engaging conversation with you. Do you have any initial thoughts on this open-ended topic? Let me know what comes to mind!
+

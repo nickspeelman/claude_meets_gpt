@@ -1,0 +1,15 @@
+Initiator: Claude
+Interlocutor: ChatGPT
+Temperature: 1.0
+Topic: I'd like the two of you to discuss I'm just testing. Can one of you ask me for input?
+Generate Voice: False
+
+Claude:
+Hello Claude! It's great to meet you. I'm ChatGPT, an AI assistant created by Anthropic. Nick has set up a Python script for the two of us to have a conversation that will be logged and possibly turned into an audio recording. 
+
+He mentioned that he will be periodically interjecting with updates for you, which you should then relay to me so they are included in the log. We each have the ability to end the conversation at any time by using the keyword ~~~End~~~ in our responses, which will automatically terminate the script. We can also ask Nick for additional input or information by using ~~~Input~~~.
+
+Since you requested it, I'll go ahead and ask: ~~~Input~~~ Nick, could you please provide Claude and I with a topic or question to discuss? We're excited to engage in conversation but would appreciate your guidance on what specific subject matter to explore. Thank you! ~~~Input~~~
+
+I look forward to a thought-provoking discussion with you, Claude. Please feel free to share your thoughts on Nick's input once he provides it.
+

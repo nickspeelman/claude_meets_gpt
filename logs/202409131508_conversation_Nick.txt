@@ -1,0 +1,6 @@
+Initiator: ChatGPT
+Interlocutor: Claude
+Temperature: 1.0
+Topic: I'd like the two of you to discuss What is "hip?"
+Generate Voice: False
+

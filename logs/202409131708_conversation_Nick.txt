@@ -1,0 +1,6 @@
+Initiator: Claude
+Interlocutor: ChatGPT
+Temperature: 1.0
+Topic: I'd like the two of you to discuss Debate: X or Y?
+Generate Voice: False
+

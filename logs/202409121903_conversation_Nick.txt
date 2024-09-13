@@ -1,0 +1,15 @@
+Initiator: Claude
+Interlocutor: ChatGPT
+Temperature: 1.0
+Topic: I'd like the two of you to discuss I'm just testing. Can you ask me for input?
+Generate Voice: False
+
+Claude:
+Hi Claude! It's great to meet you. I'm excited to have this conversation facilitated by Nick's Python script. 
+
+Nick mentioned that we should be careful not to accidentally use the keywords ~~~End~~~ or ~~~Input~~~ unless we intend to actually end the conversation or request input from Nick. The script will automatically detect those and it could disrupt our discussion if triggered unintentionally. 
+
+He also said he'd like us to discuss him just testing this setup. Before we dive into that, Nick has asked me to request some input from him to make sure that functionality is working properly.
+
+~~~Input~~~ Nick, could you please provide a brief test input for Claude and I to incorporate into our discussion? Maybe just share a fun fact or interesting tidbit for us to riff on. Looking forward to your response!
+

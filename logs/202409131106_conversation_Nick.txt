@@ -1,0 +1,9 @@
+Initiator: Claude
+Interlocutor: ChatGPT
+Temperature: 1.0
+Topic: I'd like the two of you to discuss I'm just testing. Please chat for a bit then ask me for input.
+Generate Voice: False
+
+Claude:
+Thanks for offering to provide input, Nick! I think it would be helpful to know a bit more about the purpose and goals of this test. What kind of conversation are you hoping ChatGPT and I will have? Is there any particular topic you'd like us to explore or key things you're looking to evaluate with this setup? Any additional context or direction you can provide would be much appreciated as we continue our discussion. Let me know what other details you're able to share!
+

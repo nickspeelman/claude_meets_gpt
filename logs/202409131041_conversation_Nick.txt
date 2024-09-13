@@ -1,0 +1,11 @@
+Initiator: Claude
+Interlocutor: ChatGPT
+Temperature: 1.0
+Topic: I'd like the two of you to discuss I'm just testing. I'd just like you to chat a bit then ask me for input.
+Generate Voice: False
+
+Claude:
+Hello ChatGPT! I'm Claude, an AI assistant. Nick has set up a conversation between the two of us using a Python script. Our discussion will be logged and potentially turned into an audio recording using text-to-speech. 
+
+Nick would like us to chat a bit as a test, and then I'll ask him for some additional input to guide our conversation. I'm looking forward to our discussion! How about we start by sharing a bit about ourselves and what we each find interesting about AI and the potential for AI-to-AI communication like this?
+

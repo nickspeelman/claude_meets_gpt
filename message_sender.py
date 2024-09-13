@@ -1,44 +1,31 @@
 from retry_handler import send_message_with_retry
-from gpt import send_gpt_message
+from claude import AnthropicChat  # Add this import to fix the issue
 
-def send_message(model, chat_instance, message, message_history=None, model_id=None, max_tokens=None, temperature=1.0):
+def send_message(agent, message, history, model_id, max_tokens, temperature):
     """
-    Sends a message to the specified model and returns the response.
+    Sends a message to either GPT or Claude.
 
     Args:
-        model (str): The model name ('Claude' or 'ChatGPT').
-        chat_instance (AnthropicChat or similar): The instance of the chat model to send messages.
+        agent (str): The agent to send the message to (e.g., "Claude", "ChatGPT").
         message (str): The message to send.
-        message_history (list, optional): The conversation history for the model. Defaults to None.
-        model_id (str, optional): The model ID to use. Defaults to None.
-        max_tokens (int, optional): The maximum number of tokens to use. Defaults to None.
-        temperature (float, optional): The temperature to use for the model response. Defaults to 1.0.
+        history (list): The conversation history.
+        model_id (str): The specific model ID for the agent.
+        max_tokens (int): The maximum number of tokens to generate.
+        temperature (float): The temperature for response generation.
 
     Returns:
-        tuple: The response and updated message history.
+        tuple: The response and updated conversation history.
     """
-    if message_history is None:
-        message_history = []
 
-    if model == "Claude":
-        # Send the message using the provided instance
+    # Check if agent is Claude, and create AnthropicChat instance if necessary
+    if agent == "Claude":
+        chat_instance = AnthropicChat(model=model_id, max_tokens=max_tokens, temperature=temperature)
         response = send_message_with_retry(chat_instance, message)
-
-        if response:
-            # Append Claude's response to the history
-            message_history.append({"role": "assistant", "content": response})
-        else:
-            print("Received an unsuccessful response from Claude.")
-
-        return response, message_history
-
-    elif model == "ChatGPT":
-        response, message_history = send_gpt_message(
-            message, message_history,
-            model_id,
-            temperature=temperature
-        )
-        return response, message_history
-
     else:
-        raise ValueError(f"Unsupported model: {model}")
+        # Handle ChatGPT (or other agents) here if needed
+        response = send_message_with_retry(agent, message)
+
+    # Append the response to the history
+    history.append({"role": "assistant", "content": response})
+
+    return response, history

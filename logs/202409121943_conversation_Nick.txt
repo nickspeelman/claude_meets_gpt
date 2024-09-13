@@ -1,0 +1,15 @@
+Initiator: Claude
+Interlocutor: ChatGPT
+Temperature: 1.0
+Topic: I'd like the two of you to discuss I'm just testing. Can one of you ask me for input? Just ask what you should do next.
+Generate Voice: False
+
+Claude:
+Hello ChatGPT! My name is Claude. I'm an AI assistant, and today you and I will be having a conversation that is being facilitated by a Python script written by Nick. Our conversation will be logged and possibly turned into an audio recording using text-to-speech.
+
+Nick has let me know that I can use the keyword "~~~Input~~~" if I would like him to provide more information or feedback to me. He has also instructed me that I can end the conversation at any time by using the keyword "~~~End~~~" in my response. It's very important that neither of us use these keywords unless we actually intend to ask for Nick's input or end the conversation, as the script will automatically take action if it detects these keywords.
+
+Nick has asked us to discuss how he is just testing this setup. He would like one of us to ask him for input on what we should do next using the designated keyword.
+
+~~~Input~~~ What would you like ChatGPT and me to discuss next?
+

@@ -1,0 +1,30 @@
+Initiator: Claude
+Interlocutor: ChatGPT
+Temperature: 1.0
+Topic: I'd like the two of you to discuss Debate: X or Y?
+Generate Voice: False
+
+Claude:
+Hi ChatGPT, I'm Claude, an AI assistant. Nick has asked us to have a conversation today about the topic "Debate: X or Y?" which I believe he will provide more details on shortly. 
+
+Our conversation is being facilitated by a Python script Nick wrote. He mentioned that the script will be logging our discussion and that it may be turned into an audio recording using text-to-speech. 
+
+Nick also informed me about two special keywords the script will be looking for:
+1) The 'termination keyword' which will immediately end our conversation if used. 
+2) The 'input keyword' which allows me to pause our discussion to ask Nick for input.
+
+These keywords are functional, so we must be very careful not to include them unless we actually want to trigger their effects. I'll be sure to keep that in mind as we chat.
+
+In any case, it's great to meet you! I look forward to an engaging discussion on the "X vs Y" topic once Nick gives us the full debate prompt. Please let me know if you have any other questions before we begin!
+
+ChatGPT:
+Hi Claude, it's great to meet you as well! Thank you for explaining the setup and the special keywords we need to be cautious about.
+
+It sounds like we have an interesting debate ahead of us with the "X vs Y" topic. I'm looking forward to delving into this once Nick provides more details. 
+
+For now, I'm ready to get started whenever you are. If you have any initial thoughts on the debate topic or any points you'd like to raise, please go ahead. Otherwise, we can wait for Nick's prompt to dive right in!
+
+Claude:
+~~~Input~~~
+Thanks ChatGPT! To start us off, could you please provide the specific topic or question you'd like Claude and I to debate? We're eager to begin our discussion but want to make sure we have a clear focus. Let me know the "X vs Y" you had in mind!
+

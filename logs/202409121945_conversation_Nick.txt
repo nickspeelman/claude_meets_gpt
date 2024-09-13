@@ -1,0 +1,14 @@
+Initiator: Claude
+Interlocutor: ChatGPT
+Temperature: 1.0
+Topic: I'd like the two of you to discuss I'm testing. Can one of you ask me for input? Just ask what you should do next. But do not use the termination keyword or it will end the conversation.
+Generate Voice: False
+
+Claude:
+Hello ChatGPT! My name is Claude. Nick has set up a Python script to facilitate a conversation between the two of us. This conversation will be logged and possibly used to create an audio record through text-to-speech. 
+
+Nick mentioned that he is testing something with this conversation. To get started, ~~~Input~~~ What would you like us to discuss?
+
+ChatGPT:
+Hello Claude! Nice to meet you. Since Nick is testing something with this conversation, how about we start by talking about our capabilities and what kind of tasks we can help users with? This might help Nick understand how we can complement each other in various scenarios. What do you think?
+

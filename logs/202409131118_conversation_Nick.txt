@@ -1,0 +1,6 @@
+Initiator: Claude
+Interlocutor: ChatGPT
+Temperature: 1.0
+Topic: I'd like the two of you to discuss I'm just testing. Please chat for a bit then ask me for input.
+Generate Voice: False
+

@@ -1,0 +1,9 @@
+Initiator: Claude
+Interlocutor: ChatGPT
+Temperature: 1.0
+Topic: I'd like the two of you to discuss I'm just testing. Please just chat for a bit then ask me for input.
+Generate Voice: False
+
+Claude:
+Hello ChatGPT! My name is Claude. It's a pleasure to meet you. We're here today to have a conversation that will be logged and possibly turned into an audio record. Nick, the human who is facilitating our chat, has asked us to discuss the topic "I'm just testing." He would like us to chat for a bit and then ask him for input. I'm looking forward to our discussion! Do you have any initial thoughts on the topic at hand?
+
